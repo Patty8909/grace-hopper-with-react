@@ -34,10 +34,21 @@ class Paragraph extends React.Component {
       return (
         <div className="container">
             <Title />
+            <Section />
+            <About />
+          </div>
+       
+      );
+    }
+  }
+
+  class Section extends React.Component {
+    render() {
+      return (
+        <div className="section-one">
             <Paragraph />
             <Career />
             <Phrase />
-            <About />
           </div>
        
       );
@@ -86,6 +97,7 @@ class Paragraph extends React.Component {
              <tbody>
                 <tr>
                     <td colspan ="2">
+                        <img src={grace} />
                         <p>Rear Admiral Grace M. Hopper, 1984</p>
                     </td>
                 </tr>

@@ -3,48 +3,40 @@ body {
   margin: 20px;
 }
 
-ol, ul {
-  padding-left: 30px;
+.biography {
+  width: 75%;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.section-one {
+  width: 70%;
+  display: inline-block;
+}
+.summary {
+  vertical-align: top;
+  float: right;
+  width: 25%;
 }
 
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+.summary-table {
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  padding: 1px;
+  font-size: 14px;
 }
 
-.status {
-  margin-bottom: 10px;
+.summary-table thead th {
+  background-color: #B0C4DE;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 18px;
 }
 
-.square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
+.summary-table tbody tr:first-child {
   text-align: center;
-  width: 34px;
 }
 
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
+.summary-table tbody th {
+  text-align: left;
 }
